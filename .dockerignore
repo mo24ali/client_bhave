@@ -1,0 +1,31 @@
+# ==========================================
+# Git & Documentation
+# ==========================================
+.git
+.gitignore
+README.md
+LICENSE
+
+# ==========================================
+# Python Environments & Cache
+# ==========================================
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ==========================================
+# Heavy Data & ML Artifacts
+# ==========================================
+notebooks/
+mlruns/
+data/processed/
+.ipynb_checkpoints/
+
+# ==========================================
+# IDE Configuration Files
+# ==========================================
+.vscode/
+.idea/
