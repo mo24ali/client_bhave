@@ -1,0 +1,43 @@
+# ==========================================
+# Python & Environments
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+
+# ==========================================
+# Jupyter Notebooks
+# ==========================================
+.ipynb_checkpoints/
+
+# ==========================================
+# Data Science & MLOps Artifacts
+# ==========================================
+mlruns/
+models_saved/*
+!models_saved/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Ignore raw data if large (keep structure with .gitkeep)
+# data/raw/*
+# !data/raw/.gitkeep
+
+# ==========================================
+# IDEs & System Files
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# ==========================================
+# Logs & Temporary Files
+# ==========================================
+*.log
+*.tmp
