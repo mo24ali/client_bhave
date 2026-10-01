@@ -23,7 +23,7 @@ def main():
     X_train = df_train.drop(columns=cols_to_drop)
 
 
-    OPTIMAL_K = 3 # to be changeable based on the needs but based on the graphs in the notebook elbow => k=4, and silhouette => k=2 so I choosed 3
+    OPTIMAL_K = 4 # to be changeable based on the needs but based on the graphs in the notebook elbow => k=4, and silhouette => k=2 so I choosed 3
     logging.info(f"Training K-Means with k={OPTIMAL_K}")
     kmeans = KMeans(n_clusters=OPTIMAL_K, random_state=42, n_init=10)
     kmeans.fit(X_train)
