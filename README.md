@@ -232,7 +232,7 @@ docker run -p 8501:8501 clientbehave
 # → http://localhost:8501
 ```
 
-> ⚠️ **Statut** : le `Dockerfile` à la racine est actuellement **vide (non implémenté)**, et `.dockerignore` exclut `data/processed/` ce qui empêcherait le chargement des données dans le conteneur. Ces deux points sont à corriger avant livraison.
+L'image embarque l'application, le modèle champion (`models_saved/`) et les données traitées (`data/processed/`). Un `HEALTHCHECK` interroge l'endpoint `/_stcore/health` de Streamlit.
 
 ---
 
